@@ -1,0 +1,161 @@
+/* =====================================
+   HERO ORBITS
+===================================== */
+
+.orbit-1 {
+    animation:
+        rotateOrbit 15s linear infinite;
+}
+
+
+.orbit-2 {
+    animation:
+        rotateOrbitReverse 22s linear infinite;
+}
+
+
+.orbit-3 {
+    animation:
+        rotateOrbit 30s linear infinite;
+}
+
+
+@keyframes rotateOrbit {
+
+    from {
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            translate(-50%, -50%)
+            rotate(360deg);
+    }
+
+}
+
+
+@keyframes rotateOrbitReverse {
+
+    from {
+        transform:
+            translate(-50%, -50%)
+            rotate(360deg);
+    }
+
+    to {
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg);
+    }
+
+}
+
+
+/* =====================================
+   CORE
+===================================== */
+
+.data-core {
+    animation:
+        corePulse 3s ease-in-out infinite;
+}
+
+
+@keyframes corePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 50px rgba(24,107,217,0.25);
+    }
+
+    50% {
+        box-shadow:
+            0 0 90px rgba(24,107,217,0.5);
+    }
+
+}
+
+
+/* =====================================
+   NODES
+===================================== */
+
+.data-node {
+    animation:
+        nodeFloat 4s ease-in-out infinite;
+}
+
+
+.node-2 {
+    animation-delay: 0.8s;
+}
+
+
+.node-3 {
+    animation-delay: 1.4s;
+}
+
+
+.node-4 {
+    animation-delay: 2s;
+}
+
+
+@keyframes nodeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+/* =====================================
+   SCROLL ARROW
+===================================== */
+
+.scroll-arrow {
+    animation:
+        scrollBounce 1.8s ease-in-out infinite;
+}
+
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+}
+
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}

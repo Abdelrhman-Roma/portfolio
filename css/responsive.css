@@ -1,0 +1,272 @@
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 100px 7%;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 350px;
+        height: 350px;
+    }
+
+    .orbit-1 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .orbit-2 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .orbit-3 {
+        width: 340px;
+        height: 340px;
+    }
+
+    .data-core {
+        width: 120px;
+        height: 120px;
+    }
+
+    .side-navigation {
+        right: 15px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-name {
+        font-size: 55px;
+        letter-spacing: -2px;
+    }
+
+    .hero-title {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        width: 280px;
+        height: 280px;
+    }
+
+    .orbit-1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .orbit-2 {
+        width: 215px;
+        height: 215px;
+    }
+
+    .orbit-3 {
+        width: 280px;
+        height: 280px;
+    }
+
+    .data-core {
+        width: 100px;
+        height: 100px;
+    }
+
+    .data-node {
+        width: 35px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .side-navigation {
+        display: none;
+    }
+
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
+}
+
+
+/* =====================================
+   ABOUT RESPONSIVE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        text-align: center;
+    }
+
+
+    .about-intro p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .about-link {
+        justify-content: center;
+    }
+
+
+    .about-visual {
+        min-height: 450px;
+    }
+
+
+    .about-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding:
+            100px 7%;
+    }
+
+
+    .about-intro h2 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .about-card {
+        width: 100%;
+
+        max-width: 340px;
+    }
+
+
+    .about-visual {
+        min-height: 400px;
+    }
+
+
+    .floating-data {
+        display: none;
+    }
+
+
+    .about-stats {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .stat {
+        padding: 12px;
+    }
+
+
+    .stat strong {
+        font-size: 28px;
+    }
+
+}
+
+
+/* =====================================
+   SKILLS RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .skills-section {
+        padding:
+            100px 6vw;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skill-flow {
+        flex-wrap: wrap;
+
+        gap: 25px;
+    }
+
+
+    .flow-line {
+        width: 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .skills-section {
+        padding:
+            90px 5vw;
+    }
+
+
+    .skills-header h2 {
+        font-size: 42px;
+    }
+
+
+    .skill-card {
+        padding: 24px;
+
+        min-height: auto;
+    }
+
+
+    .skill-flow {
+        justify-content: flex-start;
+
+        padding: 20px;
+    }
+
+
+    .flow-line {
+        display: none;
+    }
+
+
+    .flow-item,
+    .flow-result {
+        min-width: 80px;
+    }
+
+}

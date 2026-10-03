@@ -1,0 +1,182 @@
+/* =========================================================
+   CSS VARIABLES - COLOR PALETTE & GLOBAL DESIGN TOKENS
+   ========================================================= */
+
+:root {
+
+    /* =====================================
+       UTILITY TOKENS
+       ===================================== */
+
+    --bg: var(--bg-primary);
+
+    --transition: 0.3s ease;
+
+    --z-loader: 10000;
+    --z-nav: 900;
+
+
+
+    /* =====================================
+       COLOR PALETTE
+       Based on Adobe Express extraction
+       ===================================== */
+
+    /* Primary Colors */
+    --color-dark-bg: #02050D;        /* Deep navy background */
+    --color-primary-blue: #186BD9;   /* Primary blue */
+    --color-accent-blue: #11468C;    /* Darker blue accent */
+    --color-success-green: #2DA64B;  /* Success/Active green */
+    --color-warning-yellow: #F2AE30; /* Warning/Highlight yellow */
+
+    /* Base Colors */
+    --color-white: #FFFFFF;
+    --color-off-white: #FFFFFF;
+    --color-light-gray: rgba(242,174,48,0.75);
+    --color-gray: rgba(255,255,255,0.68);
+    --color-dark-gray: rgba(17,70,140,0.75);
+    --color-darker: #11468C;
+    --color-darkest: #11468C;
+
+
+    /* =====================================
+       SEMANTIC COLOR ASSIGNMENTS
+       ===================================== */
+
+    /* Background Colors */
+    --bg-primary: var(--color-dark-bg);
+    --bg-secondary: var(--color-darkest);
+    --bg-card: var(--color-darker);
+    --bg-hover: rgba(24, 107, 217, 0.1);
+
+    /* Text Colors */
+    --text-primary: var(--color-off-white);
+    --text-secondary: var(--color-gray);
+    --text-muted: var(--color-dark-gray);
+    --text-heading: var(--color-white);
+
+    /* Accent Colors */
+    --accent-primary: var(--color-primary-blue);
+    --accent-secondary: var(--color-accent-blue);
+    --accent-success: var(--color-success-green);
+    --accent-warning: var(--color-warning-yellow);
+
+    /* Border Colors */
+    --border-primary: rgba(24,107,217,0.15);
+    --border-secondary: rgba(17,70,140,0.25);
+    --border-accent: var(--color-primary-blue);
+
+    /* Status Colors */
+    --status-active: var(--color-success-green);
+    --status-warning: var(--color-warning-yellow);
+    --status-error: #F2AE30;
+    --status-info: var(--color-primary-blue);
+
+
+    /* =====================================
+       LEGACY VARIABLE MAPPINGS
+       For backward compatibility
+       ===================================== */
+
+    --dark-bg: var(--color-dark-bg);
+    --primary: var(--color-primary-blue);
+    --secondary: var(--color-accent-blue);
+    --green: var(--color-success-green);
+    --yellow: var(--color-warning-yellow);
+    --white: var(--color-white);
+    --text: var(--color-off-white);
+    --muted: var(--color-gray);
+    --border: var(--border-primary);
+
+
+    /* =====================================
+       SPACING SYSTEM
+       ===================================== */
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+
+    /* =====================================
+       TYPOGRAPHY
+       ===================================== */
+
+    --font-family-base: "Poppins", -apple-system, BlinkMacSystemFont,
+                        "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    --font-family-mono: "Fira Code", "Consolas", "Monaco", monospace;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+    --font-size-4xl: 48px;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* =====================================
+       BORDER RADIUS
+       ===================================== */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+
+    /* =====================================
+       SHADOWS
+       ===================================== */
+
+    --shadow-sm: 0 2px 8px rgba(2,5,13,0.1);
+    --shadow-md: 0 4px 16px rgba(2,5,13,0.15);
+    --shadow-lg: 0 8px 32px rgba(2,5,13,0.2);
+    --shadow-glow: 0 0 20px rgba(24, 107, 217, 0.3);
+
+
+    /* =====================================
+       Z-INDEX SCALE
+       ===================================== */
+
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-popover: 600;
+    --z-toast: 700;
+    --z-scroll: 800;
+
+
+    /* =====================================
+       TRANSITIONS
+       ===================================== */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+
+
+    /* =====================================
+       BREAKPOINTS (for reference in JS)
+       ===================================== */
+
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+
+}
